@@ -17,9 +17,11 @@ namespace Constructors_Overloading
         #endregion
         #region implicity (Automatic) proprerty get and set code
 
+            [Required]
         public int Id { get; set; }
 
-
+        [Required]
+        [MaxLength(40,ErrorMessage = "please add name that have les then 40 caracters")]
         public string Name { get; set; }
         public double AP1 { get; set; }
         public double AP2 { get; set; }
